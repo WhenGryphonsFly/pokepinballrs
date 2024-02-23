@@ -47,28 +47,28 @@ void sub_3219C(void)
         {
             s16 numSpecialMons = 0;
             gUnknown_020314E0->unk598 = 0;
-            if (gMain_saveData.pokedexFlags[SPECIES_AERODACTYL])
+            if (gMain_saveData.pokedexFlags[SPECIES_AERODACTYL] != 8)
             {
                 specialMons[numSpecialMons++] = SPECIES_AERODACTYL;
                 if (gMain_saveData.pokedexFlags[SPECIES_AERODACTYL] < 4)
                     gUnknown_020314E0->unk598 = SPECIES_AERODACTYL;
             }
 
-            if (gMain_saveData.pokedexFlags[SPECIES_CHIKORITA])
+            if (gMain_saveData.pokedexFlags[SPECIES_CHIKORITA] != 8)
             {
                 specialMons[numSpecialMons++] = SPECIES_CHIKORITA;
                 if (gMain_saveData.pokedexFlags[SPECIES_CHIKORITA] < 4)
                     gUnknown_020314E0->unk598 = SPECIES_CHIKORITA;
             }
 
-            if (gMain_saveData.pokedexFlags[SPECIES_TOTODILE])
+            if (gMain_saveData.pokedexFlags[SPECIES_TOTODILE] != 8)
             {
                 specialMons[numSpecialMons++] = SPECIES_TOTODILE;
                 if (gMain_saveData.pokedexFlags[SPECIES_TOTODILE] < 4)
                     gUnknown_020314E0->unk598 = SPECIES_TOTODILE;
             }
 
-            if (gMain_saveData.pokedexFlags[SPECIES_CYNDAQUIL])
+            if (gMain_saveData.pokedexFlags[SPECIES_CYNDAQUIL] != 8)
             {
                 specialMons[numSpecialMons++] = SPECIES_CYNDAQUIL;
                 if (gMain_saveData.pokedexFlags[SPECIES_CYNDAQUIL] < 4)
