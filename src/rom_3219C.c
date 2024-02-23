@@ -302,9 +302,9 @@ void sub_325E0(void)
     
     rand = GetTimeAdjustedRandom();
     if (gMain.eReaderBonus[EREADER_ENCOUNTER_RATE_UP_CARD])
-        rand %= 100;
-    else
         rand %= 50;
+    else
+        rand %= 100;
     
     if (gUnknown_020314E0->unk59E == SPECIES_PICHU)
         rand = 1;
