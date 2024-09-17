@@ -24,7 +24,7 @@ else
 EXE :=
 endif
 
-TITLE       := POKEPIN R/S
+TITLE       := SPEEDCHOICE0
 GAME_CODE   := BPPE
 MAKER_CODE  := 01
 REVISION    := 0
