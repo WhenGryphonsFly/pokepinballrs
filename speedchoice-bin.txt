@@ -1,0 +1,31 @@
+0 / 6 Complete
+
+* Modification 1: Keep 1 GET arrow lit
+	* Overwrite 0x08028080[2]: 01-21 // movs r1, #1
+	* Notes: Sets saved GET arrow to 1 instead of 0
+* Modification 2: Keep 1 EVO arrow lit
+	* Overwrite 0x08019d98[38]: 2D-68 72-24 24-01 2D-19
+		00-20 A8-73 E9-7B E8-73 01-20 28-77 69-77 00-00
+		00-00 00-00 00-00 00-00 00-00 00-00 1E-E0
+	* Notes: Sets saved EVO arrow to 1 instead of 0
+* Modification 3: Minimize number of egg interactions to hatch (Sapphire only)
+	* Overwrite 0x08031514[2]: 0c-e0 // b #0x1c
+	* Notes: If egg is present, always hatches egg if mode allows
+
+* Modification 4: Only require 1 hit to catch (Catch 'Em)
+	* Overwrite 0x080148b4[2]: 03-30 // adds r0, #3
+	* Notes: This increments catch by 3 instead of 1
+	* Check: 27e3a
+* Modification 5: Only require 1 EXP to evolve
+	* Overwrite 0x08027c16[2]: 03-30 // adds r0, #3
+	* Notes: This increments EXP by 3 instead of 1
+* Modification 6: Only require 1 hit to catch (Egg)
+	* Overwrite 0x08024e12[2]: 02-30 // adds r0, #2
+	* Notes: This increments catch by 2 instead of 1
+	* Check: 2436c
+
+Other Notes
+* Jirachi hit location: 0x0801481e
+* Ruby egg interaction location: sub_153CC / 0x020002da
+* [TODO] Only require 1 bumper hit to reveal
+* [TODO] Set 1 EVO arrow on start
