@@ -58,11 +58,11 @@ void sub_31F6C(void) {
             case SPECIES_KECLEON:
             case SPECIES_ABSOL:
             case SPECIES_WOBBUFFET:
-                selectedWeight = 910;
-                if (gMain.eReaderBonus[EREADER_ENCOUNTER_RATE_UP_CARD]) selectedWeight = 1820;
+                selectedWeight = 455;
+                if (gMain.eReaderBonus[EREADER_ENCOUNTER_RATE_UP_CARD]) selectedWeight = 910;
                 break;
             default:
-                selectedWeight = 9100;
+                selectedWeight = 4550;
         }
 
         currentWeight = selectedWeight;
