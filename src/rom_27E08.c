@@ -2026,7 +2026,7 @@ void sub_24408(void)
             squaredMagnitude = xx + yy;
             if (squaredMagnitude < 82)
             {
-                gCurrentPinballGame->unk5A5++;
+                gCurrentPinballGame->unk5A5 += 2;
                 gCurrentPinballGame->unk5AA = 4;
                 gCurrentPinballGame->unk5A9 = 20;
                 if (gCurrentPinballGame->unk5A5 > 1)
@@ -3444,7 +3444,7 @@ void sub_278F4(void)
             MPlayStart(&gMPlayInfo_SE1, &se_unk_86);
             gCurrentPinballGame->unk17 = 1;
             gCurrentPinballGame->unk71D[gCurrentPinballGame->unk26B] = 5;
-            gCurrentPinballGame->unk26B++;
+            gCurrentPinballGame->unk26B += 3;
             gMain.unk44[32]->available = 0;
             if (gCurrentPinballGame->unk26B == 3)
             {

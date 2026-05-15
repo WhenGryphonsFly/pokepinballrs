@@ -75,7 +75,7 @@ void sub_27F94(void)
         break;
     case 2:
         sub_28AE0();
-        gCurrentPinballGame->catchModeArrows = 0;
+        gCurrentPinballGame->catchModeArrows = 1;
         gCurrentPinballGame->unk17++;
         break;
     case 3:

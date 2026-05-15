@@ -802,7 +802,7 @@ u16 sub_14740(struct Vector16 *arg0, u16 *arg1)
                 {
                     if (gCurrentPinballGame->unk5AA == 0)
                     {
-                        gCurrentPinballGame->unk5A5++;
+                        gCurrentPinballGame->unk5A5 += 3;
                         if (gCurrentPinballGame->unk5A5 == 3)
                         {
                             gCurrentPinballGame->unk71D[gCurrentPinballGame->unk5A5 - 1] = 3;
